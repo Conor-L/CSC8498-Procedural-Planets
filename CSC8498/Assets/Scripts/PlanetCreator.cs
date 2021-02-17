@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OctahedronSphereCreator {
+public class PlanetCreator {
 
     private static Vector3[] directions = { 
         Vector3.left,
@@ -33,10 +33,10 @@ public class OctahedronSphereCreator {
             }
         }
 
-        if (subdivisions < 0)
+        if (subdivisions < 4)
         {
-            subdivisions = 0;
-            Debug.LogWarning("Octahedron Sphere subdivisions increased to minimum, which is 0.");
+            subdivisions = 4;
+            Debug.LogWarning("Octahedron Sphere subdivisions increased to minimum, which is 4.");
         }
 
         else if (subdivisions > 6)
