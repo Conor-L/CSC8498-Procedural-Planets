@@ -11,6 +11,7 @@ public class PlanetEditor : Editor
 
     public override void OnInspectorGUI()
     {
+
         using (var check = new EditorGUI.ChangeCheckScope())
         {
             base.OnInspectorGUI();
@@ -20,7 +21,7 @@ public class PlanetEditor : Editor
             }
         }
             
-        if (GUILayout.Button("Create Planet"))
+        if (GUILayout.Button("Create Planet")) // A simple button to allow me to create a planet without Update Setting set to true
         {
             planet.CreatePlanet();
         }
