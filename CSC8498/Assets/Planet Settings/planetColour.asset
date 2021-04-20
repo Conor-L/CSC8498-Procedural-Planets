@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cedd58df2035c544986196d5365d8832, type: 3}
-  m_Name: planetTest
+  m_Script: {fileID: 11500000, guid: 465320c34a533514ead69d95a004dbd6, type: 3}
+  m_Name: planetColour
   m_EditorClassIdentifier: 
-  planetRadius: 2.87
-  planetSubdivisions: 6
-  noiseOffset: {x: 0, y: 0, z: 0}
+  planetColour: {r: 0, g: 0.33823538, b: 1, a: 0}

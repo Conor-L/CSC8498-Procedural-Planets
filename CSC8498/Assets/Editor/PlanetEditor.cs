@@ -17,7 +17,7 @@ public class PlanetEditor : Editor
             base.OnInspectorGUI();
             if (check.changed)
             {
-                planet.CreatePlanet();
+                planet.CreatePlanet();                
             }
         }
             
@@ -27,6 +27,7 @@ public class PlanetEditor : Editor
         }
 
         DrawSettingsEditor(planet.planetSettings, planet.OnPlanetSettingsUpdate, ref planet.hideSettings, ref planetEditor);
+        DrawSettingsEditor(planet.colourSettings, planet.OnColourSettingsUpdate, ref planet.hideSettings, ref planetEditor);
     }
 
     void DrawSettingsEditor(Object settings, System.Action onSettingsUpdated, ref bool hide, ref Editor editor)

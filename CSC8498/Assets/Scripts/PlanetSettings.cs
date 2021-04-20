@@ -9,4 +9,6 @@ public class PlanetSettings : ScriptableObject
 
     [Range(4, 6)]
     public int planetSubdivisions = 4;
+
+    public Vector3 noiseOffset = new Vector3(0, 0, 0);
 }

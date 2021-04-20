@@ -11,7 +11,7 @@ public class PlanetCreator {
         Vector3.forward
     };
 
-    public static Mesh Create (int subdivisions, float radius)
+    public static Mesh Create(int subdivisions, float radius)
     {
         int resolution = 1 << subdivisions;
         Vector3[] vertices = new Vector3[(resolution + 1) * (resolution + 1) * 4 - (resolution * 2 - 1) * 3];
@@ -29,7 +29,7 @@ public class PlanetCreator {
         {
             for (int i = 0; i < vertices.Length; i++)
             {
-                vertices[i] *= radius;
+                vertices[i] *= (radius);
             }
         }
 
@@ -43,10 +43,10 @@ public class PlanetCreator {
         {
             subdivisions = 6;
             Debug.LogWarning("Octahedron Sphere subdivisions decreased to maximum, which is 6.");
-        }
+        }        
 
         Mesh mesh = new Mesh();
-        mesh.name = "Octahedron Sphere";
+        mesh.name = "Planet";
         mesh.vertices = vertices;
         mesh.normals = normals;
         mesh.uv = uv;
