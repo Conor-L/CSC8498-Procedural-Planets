@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: planetColour
   m_EditorClassIdentifier: 
   planetColour: {r: 0, g: 0.33823538, b: 1, a: 0}
+  hueOffset: 0
