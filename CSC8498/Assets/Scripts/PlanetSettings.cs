@@ -7,7 +7,7 @@ public class PlanetSettings : ScriptableObject
 {
     public float planetRadius = 1.0f;
 
-    [Range(4, 6)]
+    [Range(4, 7)]
     public int planetSubdivisions = 4;
 
     [Header("Noise Settings")]

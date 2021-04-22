@@ -19,7 +19,6 @@ public class PlanetTester : MonoBehaviour
     // Shader property for colour/graphics
     string hueOffset = "Vector1_098be1435dd945e3b45c18bb3146ab15";
     string ambientOcculsion = "Vector1_69d143d58eb6407595a4c6dcc94c84c2";
-    string landscapeGradient = "Gradient_e03390dd776d4958882711d82acb0070";
 
     [HideInInspector]
     public bool hideSettings;

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedd58df2035c544986196d5365d8832, type: 3}
   m_Name: planetTest
   m_EditorClassIdentifier: 
-  planetRadius: 10
-  planetSubdivisions: 6
-  noiseScale: 1
-  noiseOffset: {x: -0.8, y: 12.55, z: 7.4}
-  noiseContrast: 0.66
-  displacementAmplitude: 1.82
+  planetRadius: 50
+  planetSubdivisions: 7
+  noiseScale: 0.2
+  noiseOffset: {x: 31.91, y: 47.4, z: 27.1}
+  noiseContrast: 0.62
+  displacementAmplitude: 6

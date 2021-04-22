@@ -39,10 +39,10 @@ public class PlanetCreator {
             Debug.LogWarning("Octahedron Sphere subdivisions increased to minimum, which is 4.");
         }
 
-        else if (subdivisions > 6)
+        else if (subdivisions > 7)
         {
-            subdivisions = 6;
-            Debug.LogWarning("Octahedron Sphere subdivisions decreased to maximum, which is 6.");
+            subdivisions = 7;
+            Debug.LogWarning("Octahedron Sphere subdivisions decreased to maximum, which is 7.");
         }        
 
         Mesh mesh = new Mesh();
