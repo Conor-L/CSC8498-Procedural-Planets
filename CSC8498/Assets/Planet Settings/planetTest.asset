@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: planetTest
   m_EditorClassIdentifier: 
   planetRadius: 50
-  planetSubdivisions: 7
-  noiseScale: 0.2
-  noiseOffset: {x: 31.91, y: 47.4, z: 27.1}
-  noiseContrast: 0.62
-  displacementAmplitude: 6
+  planetSubdivisions: 6
+  noiseScale: 0.25
+  noiseOffset: {x: 43.45, y: 53.75, z: 20}
+  noiseContrast: 0.3
+  displacementAmplitude: 0.9
+  edge1: {x: 0.36, y: 0, z: 0}
+  edge2: {x: 0.5, y: 0, z: 0}

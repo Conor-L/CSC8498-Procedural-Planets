@@ -7,7 +7,7 @@ public class PlanetSettings : ScriptableObject
 {
     public float planetRadius = 1.0f;
 
-    [Range(4, 7)]
+    [Range(4, 6)]
     public int planetSubdivisions = 4;
 
     [Header("Noise Settings")]
@@ -15,4 +15,8 @@ public class PlanetSettings : ScriptableObject
     public Vector3 noiseOffset = new Vector3(0, 0, 0);
     public float noiseContrast = 1.0f;
     public float displacementAmplitude = 1.0f;
+
+    [Header("Test Area")]
+    public Vector3 edge1 = new Vector3(0, 0, 0);
+    public Vector3 edge2 = new Vector3(0, 0, 0);
 }

@@ -20,6 +20,10 @@ public class PlanetTester : MonoBehaviour
     string hueOffset = "Vector1_098be1435dd945e3b45c18bb3146ab15";
     string ambientOcculsion = "Vector1_69d143d58eb6407595a4c6dcc94c84c2";
 
+    // testArea
+    string edge1 = "Vector3_9616aa5f9ded4f70ae2fe234c64f5e5c";
+    string edge2 = "Vector3_6c3b484f588e4f6fb1ee682e0d39bc6f";
+
     [HideInInspector]
     public bool hideSettings;
     public bool updateSettings = true;
@@ -43,6 +47,9 @@ public class PlanetTester : MonoBehaviour
             planetRenderer.sharedMaterial.SetFloat(planetRadius, planetSettings.planetRadius);            
             planetRenderer.sharedMaterial.SetFloat(noiseContrast, planetSettings.noiseContrast);
             planetRenderer.sharedMaterial.SetFloat(displacementAmplitude, planetSettings.displacementAmplitude);
+
+            planetRenderer.sharedMaterial.SetVector("Vector3_9616aa5f9ded4f70ae2fe234c64f5e5c", planetSettings.edge1);
+            planetRenderer.sharedMaterial.SetVector("Vector3_6c3b484f588e4f6fb1ee682e0d39bc6f", planetSettings.edge2);
         }       
     }
 
