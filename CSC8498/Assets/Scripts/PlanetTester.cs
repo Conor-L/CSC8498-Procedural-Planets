@@ -10,19 +10,16 @@ public class PlanetTester : MonoBehaviour
     MeshRenderer planetRenderer;
 
     // Shader properties for noise/planet
-    string noiseScale = "Vector1_a194992c1fe14c7ba013fa8c60816c3e";
-    string noiseOffset = "Vector3_f17d5aa95a654937b43ae21ceafc3b8c";
-    string planetRadius = "Vector1_d06b4fd444a0469ea7f737670fdb5507";
-    string noiseContrast = "Vector1_f07c96f6112c48d18ade235f3c5330c0";
-    string displacementAmplitude = "Vector1_6123ea63b5d3436d85f33428059b122a";
+    private string noiseScale = "Vector1_a194992c1fe14c7ba013fa8c60816c3e";
+    private string noiseOffset = "Vector3_f17d5aa95a654937b43ae21ceafc3b8c";
+    private string planetRadius = "Vector1_d06b4fd444a0469ea7f737670fdb5507";
+    private string noiseContrast = "Vector1_f07c96f6112c48d18ade235f3c5330c0";
+    private string displacementAmplitude = "Vector1_6123ea63b5d3436d85f33428059b122a";
+    private string mountainHeight = "Vector1_2b100e2524f14ed386d7a532ec915ab4";
 
     // Shader property for colour/graphics
-    string hueOffset = "Vector1_098be1435dd945e3b45c18bb3146ab15";
-    string ambientOcculsion = "Vector1_69d143d58eb6407595a4c6dcc94c84c2";
-
-    // testArea
-    string edge1 = "Vector3_9616aa5f9ded4f70ae2fe234c64f5e5c";
-    string edge2 = "Vector3_6c3b484f588e4f6fb1ee682e0d39bc6f";
+    private string hueOffset = "Vector1_098be1435dd945e3b45c18bb3146ab15";
+    private string ambientOcculsion = "Vector1_69d143d58eb6407595a4c6dcc94c84c2";
 
     [HideInInspector]
     public bool hideSettings;
@@ -47,6 +44,9 @@ public class PlanetTester : MonoBehaviour
             planetRenderer.sharedMaterial.SetFloat(planetRadius, planetSettings.planetRadius);            
             planetRenderer.sharedMaterial.SetFloat(noiseContrast, planetSettings.noiseContrast);
             planetRenderer.sharedMaterial.SetFloat(displacementAmplitude, planetSettings.displacementAmplitude);
+
+            // Mountain Noise
+            planetRenderer.sharedMaterial.SetFloat(mountainHeight, planetSettings.mountainHeight);
 
             planetRenderer.sharedMaterial.SetVector("Vector3_9616aa5f9ded4f70ae2fe234c64f5e5c", planetSettings.edge1);
             planetRenderer.sharedMaterial.SetVector("Vector3_6c3b484f588e4f6fb1ee682e0d39bc6f", planetSettings.edge2);

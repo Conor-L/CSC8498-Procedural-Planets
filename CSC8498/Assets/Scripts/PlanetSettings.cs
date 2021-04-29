@@ -16,6 +16,9 @@ public class PlanetSettings : ScriptableObject
     public float noiseContrast = 1.0f;
     public float displacementAmplitude = 1.0f;
 
+    [Header("Mountain Noise Settings")]
+    public float mountainHeight = 1.0f;
+
     [Header("Test Area")]
     public Vector3 edge1 = new Vector3(0, 0, 0);
     public Vector3 edge2 = new Vector3(0, 0, 0);
