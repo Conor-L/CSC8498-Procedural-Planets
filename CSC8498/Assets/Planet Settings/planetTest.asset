@@ -17,7 +17,7 @@ MonoBehaviour:
   noiseScale: 0.05
   noiseOffset: {x: 37.31, y: 77.9, z: 44.9}
   noiseContrast: 0.8
-  displacementAmplitude: 52.8
-  mountainHeight: 268.5
+  displacementAmplitude: 122.09
+  mountainHeight: 503.1
   edge1: {x: 0.78, y: 0, z: 0}
   edge2: {x: 0.5, y: 0, z: 0}
