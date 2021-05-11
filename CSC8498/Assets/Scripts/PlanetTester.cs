@@ -21,6 +21,10 @@ public class PlanetTester : MonoBehaviour
     private string hueOffset = "Vector1_098be1435dd945e3b45c18bb3146ab15";
     private string ambientOcculsion = "Vector1_69d143d58eb6407595a4c6dcc94c84c2";
 
+    // Triplanar Mapping
+    private string triplanarSharpness = "Vector1_32160d8f0aa54c658ed62e8bb0bdc84f";
+    private string triplanarScale = "Vector1_9a1b8ffce7914b489be885ada655f11a";
+
     [HideInInspector]
     public bool hideSettings;
     public bool updateSettings = true;
@@ -47,9 +51,6 @@ public class PlanetTester : MonoBehaviour
 
             // Mountain Noise
             planetRenderer.sharedMaterial.SetFloat(mountainHeight, planetSettings.mountainHeight);
-
-            planetRenderer.sharedMaterial.SetVector("Vector3_9616aa5f9ded4f70ae2fe234c64f5e5c", planetSettings.edge1);
-            planetRenderer.sharedMaterial.SetVector("Vector3_6c3b484f588e4f6fb1ee682e0d39bc6f", planetSettings.edge2);
         }       
     }
 
@@ -60,6 +61,8 @@ public class PlanetTester : MonoBehaviour
             CreatePlanet();
             planetRenderer.sharedMaterial.SetFloat(hueOffset, colourSettings.hueOffset);
             planetRenderer.sharedMaterial.SetFloat(ambientOcculsion, colourSettings.ambientOcculsion);
+            planetRenderer.sharedMaterial.SetFloat(triplanarSharpness, colourSettings.triplanarSharpness);
+            planetRenderer.sharedMaterial.SetFloat(triplanarScale, colourSettings.triplanarScale);
         }
     }
 

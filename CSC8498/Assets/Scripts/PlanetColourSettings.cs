@@ -9,4 +9,8 @@ public class PlanetColourSettings : ScriptableObject {
     [Header("Graphics Settings (shader)")]
     public float hueOffset = 0.0f;
     public float ambientOcculsion = 1.0f;
+
+    [Header("Triplanar Mapping Settings")]
+    public float triplanarSharpness = 1.0f;
+    public float triplanarScale = 1.0f;    
 }
