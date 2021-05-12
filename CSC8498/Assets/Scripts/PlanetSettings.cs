@@ -18,4 +18,8 @@ public class PlanetSettings : ScriptableObject
 
     [Header("Mountain Noise Settings")]
     public float mountainHeight = 1.0f;
+
+    [Header("Steepness Calculations")]
+    [Range(0, 360)]
+    public float testAngle = 0.0f;
 }

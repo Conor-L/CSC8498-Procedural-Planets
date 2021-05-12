@@ -25,6 +25,9 @@ public class PlanetTester : MonoBehaviour
     private string triplanarSharpness = "Vector1_32160d8f0aa54c658ed62e8bb0bdc84f";
     private string triplanarScale = "Vector1_9a1b8ffce7914b489be885ada655f11a";
 
+    // Steepness
+    private string testAngle = "Vector1_215a8a985d5742ce973c7ce05d069657";
+
     [HideInInspector]
     public bool hideSettings;
     public bool updateSettings = true;
@@ -51,6 +54,9 @@ public class PlanetTester : MonoBehaviour
 
             // Mountain Noise
             planetRenderer.sharedMaterial.SetFloat(mountainHeight, planetSettings.mountainHeight);
+
+            // Steepness
+            planetRenderer.sharedMaterial.SetFloat(testAngle, planetSettings.testAngle);
         }       
     }
 

@@ -15,5 +15,5 @@ MonoBehaviour:
   planetColour: {r: 0, g: 0.337255, b: 1, a: 0}
   hueOffset: 1
   ambientOcculsion: 1
-  triplanarSharpness: 2.48
-  triplanarScale: 0.01
+  triplanarSharpness: 3.5
+  triplanarScale: 0.18
