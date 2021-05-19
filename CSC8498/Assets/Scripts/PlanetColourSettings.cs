@@ -11,6 +11,7 @@ public class PlanetColourSettings : ScriptableObject {
     public float ambientOcculsion = 1.0f;
 
     [Header("Triplanar Mapping Settings")]
+    public float triplanarScale = 1.0f;
     public float triplanarSharpness = 1.0f;
-    public float triplanarScale = 1.0f;    
+    
 }
