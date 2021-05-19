@@ -15,8 +15,8 @@ MonoBehaviour:
   planetRadius: 300
   planetSubdivisions: 6
   noiseScale: 0.05
-  noiseOffset: {x: 46.1, y: 41.86, z: 54.6}
+  noiseOffset: {x: 53.1, y: 50.48, z: 54.6}
   noiseContrast: 0.7
-  displacementAmplitude: 45.8
-  mountainHeight: 0
+  displacementAmplitude: 72.4
+  mountainHeight: 118.9
   testAngle: 0
