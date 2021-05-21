@@ -16,4 +16,4 @@ MonoBehaviour:
   hueOffset: 1
   ambientOcculsion: 1
   triplanarScale: 0.01
-  triplanarSharpness: 2.97
+  triplanarSharpness: 2.25
