@@ -17,6 +17,6 @@ MonoBehaviour:
   noiseScale: 0.6
   noiseOffset: {x: 0, y: 0, z: 0}
   noiseContrast: 0.7
-  displacementAmplitude: 146.3
-  mountainHeight: 235.36
+  displacementAmplitude: 200
+  mountainHeight: 818.3
   testAngle: 0

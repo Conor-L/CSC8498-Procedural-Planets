@@ -12,7 +12,7 @@ public class PlanetBehaviour : MonoBehaviour
     public float rotationSpeed = 0.1f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         planet.transform.Rotate(rotationSpeed, rotationSpeed, rotationSpeed/10);
     }
