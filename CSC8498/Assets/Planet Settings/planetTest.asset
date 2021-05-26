@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedd58df2035c544986196d5365d8832, type: 3}
   m_Name: planetTest
   m_EditorClassIdentifier: 
-  planetRadius: 4000
+  planetRadius: 2500
   planetSubdivisions: 6
   noiseScale: 0.6
-  noiseOffset: {x: 0, y: 0, z: 0}
-  noiseContrast: 0.7
-  displacementAmplitude: 200
+  noiseOffset: {x: 100, y: 50, z: 69}
+  noiseContrast: 1
+  displacementAmplitude: 1472.4
   mountainHeight: 818.3
-  testAngle: 0

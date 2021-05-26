@@ -33,7 +33,7 @@ public class SunScript : MonoBehaviour
 
         if (lockSunToggle.isOn == true)
         {
-            sun.transform.position = mainCamera.transform.position;
+            sun.transform.position = new Vector3(0, 0, -50000);
         }
 
         else

@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class PlanetSettings : ScriptableObject
+public class PlanetSettings : ScriptableObject, IEquatable<PlanetSettings>
 {
     public float planetRadius = 1.0f;
 
@@ -19,7 +20,34 @@ public class PlanetSettings : ScriptableObject
     [Header("Mountain Noise Settings")]
     public float mountainHeight = 1.0f;
 
-    [Header("Steepness Calculations")]
-    [Range(0, 360)]
-    public float testAngle = 0.0f;
+    public bool Equals(PlanetSettings other)
+    {
+        if (other == null)
+        {
+            return false;
+        }
+
+        if (other == this)
+        {
+            Debug.Log("WOAH");
+            return true;
+        }
+
+        return (this.planetRadius == other.planetRadius && this.planetSubdivisions == other.planetSubdivisions &&
+            this.noiseScale == other.noiseScale && this.noiseOffset == other.noiseOffset && this.noiseContrast == other.noiseContrast &&
+            this.displacementAmplitude == other.displacementAmplitude && this.mountainHeight == other.mountainHeight);
+    }
+
+    public override int GetHashCode()
+    {
+        int hashCode = 1769261682;
+        hashCode = hashCode * -1521134295 + planetRadius.GetHashCode();
+        hashCode = hashCode * -1521134295 + planetSubdivisions.GetHashCode();
+        hashCode = hashCode * -1521134295 + noiseScale.GetHashCode();
+        hashCode = hashCode * -1521134295 + noiseOffset.GetHashCode();
+        hashCode = hashCode * -1521134295 + noiseContrast.GetHashCode();
+        hashCode = hashCode * -1521134295 + displacementAmplitude.GetHashCode();
+        hashCode = hashCode * -1521134295 + mountainHeight.GetHashCode();
+        return hashCode;
+    }
 }

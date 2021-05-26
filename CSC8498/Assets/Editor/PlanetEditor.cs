@@ -21,7 +21,7 @@ public class PlanetEditor : Editor
             }
         }
             
-        if (GUILayout.Button("Create Planet")) // A simple button to allow me to create a planet without Update Setting set to true
+        if (GUILayout.Button("Create Planet")) // A simple button to allow the creation of a planet without Update Setting set to true
         {
             planet.CreatePlanet();
         }
