@@ -48,6 +48,7 @@ public class PlanetCreator {
         Mesh mesh = new Mesh();
         mesh.name = "Planet";
         mesh.vertices = vertices;
+        Debug.Log(mesh.vertices.Length);
         mesh.normals = normals;
         mesh.uv = uv;
         mesh.triangles = triangles;
